@@ -10,9 +10,10 @@ makeCacheMatrix <- function(x = matrix()) {
     matinv <<- NULL
   }
   ## Assign the value of the matrix to get
-  get <- function() x
+  get <- function() x 
   setinverse <- function(solve) matinv <<- solve
   getinverse <- function() matinv
+  # Pass the value of the function makeCacheMatrix 
   list(set = set, get = get,
        setinverse = setinverse,
        getinverse = getinverse)
